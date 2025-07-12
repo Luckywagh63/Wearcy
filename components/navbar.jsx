@@ -38,7 +38,7 @@ export default function Navbar() {
               Home
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-400 transform scale-x-100 group-hover:scale-x-110 transition-transform duration-200"></span>
             </a>
-            <a href="#" className="text-slate-300 hover:text-blue-300 font-medium px-4 py-2 rounded-lg hover:bg-blue-800/30 transition-all duration-200 relative group">
+            <a href="/discover" className="text-slate-300 hover:text-blue-300 font-medium px-4 py-2 rounded-lg hover:bg-blue-800/30 transition-all duration-200 relative group">
               Discover
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
             </a>
@@ -61,9 +61,11 @@ export default function Navbar() {
           <div className="hidden md:flex space-x-3 items-center">
             {user ? (
               <div className="flex items-center space-x-4">
-                <div className="text-white font-medium">
+               <a href="/profile"> 
+               <div className="text-white font-medium">
                   👋 {user.email.split("@")[0]}
                 </div>
+                </a>
                 <button
                   onClick={handleLogout}
                   className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg font-medium shadow-md transition-all"

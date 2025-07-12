@@ -37,7 +37,7 @@ const ReWearLanding = () => {
             {/* Text Content */}
             <div className="text-center lg:text-left">
               <h1 className="text-6xl md:text-8xl font-black mb-6 leading-tight">
-                <span className="text-[#1B3C53]">Re</span><span className="text-[#456882]">Wear</span>
+                <span className="text-[#1B3C53]">Wear</span><span className="text-[#456882]">cy</span>
               </h1>
               <p className="text-xl md:text-2xl text-[#456882] mb-8 font-light">
                 Transform your wardrobe, transform the world.<br />
