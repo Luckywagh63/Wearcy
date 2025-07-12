@@ -132,7 +132,7 @@ export default function AddItemPage() {
       const data = await res.json();
 
       if (res.ok) {
-        router.push(`/items/${data.item._id}`);
+        router.push(`/itemlist/${data.item._id}`);
       } else {
         console.error('❌ Upload error:', data.error);
         alert(`Item upload failed: ${data.error || 'Unknown error'}`);
