@@ -117,7 +117,7 @@ export default function AddItemPage() {
       ...formData,
       tags: formData.tags.split(',').map((tag) => tag.trim()),
       pointsValue: Number(formData.pointsValue),
-      createdBy: '665e6d91a2b3c8e51a9b12c4', // 🔁 Replace with a real user ID from MongoDB
+      createdBy: '665e6d91a2b3c8e51a9b12c4', 
     };
 
     try {
